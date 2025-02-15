@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+
+@theme {
+    --color-green: #B2E600;
+    --font-serif: "Lora";
+    --font-sans: "PT Serif";
+  }
