@@ -78,8 +78,8 @@ const Stats = () => {
                                     <circle cx="6" cy="5" r="3" />
                                 </svg>
                                 <div className="mt-3 sm:mt-5">
-                                    <h3 className="text-lg font-semibold text-white sm:text-3xl">$55M+</h3>
-                                    <p className="mt-1 text-sm sm:text-base text-neutral-400">Ads managed yearly</p>
+                                    <h3 className="text-lg font-semibold text-white sm:text-3xl">5+</h3>
+                                    <p className="mt-1 text-sm sm:text-base text-neutral-400">year Experience</p>
                                 </div>
                             </div>
                         </div>

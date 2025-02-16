@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { TypeAnimation } from 'react-type-animation';
+import Heroimage from "../assets/Hero.png";
 
 const Hero = () => {
     return (
@@ -7,10 +8,10 @@ const Hero = () => {
             className="relative bg-neutral-900 bg-cover bg-no-repeat bg-center flex items-center justify-center px-4 md:px-8"
             style={{
                 backgroundImage: `
-                    url('./src/assets/layer-blur.svg'),
-                    url('./src/assets/lines2.svg'),
-                    url('./src/assets/star2.svg'),
-                    url('./src/assets/star.svg')
+                    url('${import.meta.env.BASE_URL}assets/layer-blur.svg'),
+                    url('${import.meta.env.BASE_URL}assets/lines2.svg'),
+                    url('${import.meta.env.BASE_URL}assets/star2.svg'),
+                    url('${import.meta.env.BASE_URL}assets/star.svg')
                 `,
                 backgroundPosition: `
                     top left, 
@@ -55,7 +56,7 @@ const Hero = () => {
                     </div>
                     <div className="flex justify-center w-72 md:w-96 max-w-full">
                         <img
-                            src="./src/assets/Hero.png"
+                            src={Heroimage}
                             className="rounded-tl-[108px] rounded-br-[108px] w-full h-auto object-contain"
                             alt="Hero"
                         />

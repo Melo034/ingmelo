@@ -1,5 +1,9 @@
 import Socials from "./Utils/Socials"
 import Stats from "./Utils/Stats"
+import about_1 from "../assets/about_1.jpg"
+import about_2 from "../assets/about_2.jpg"
+import about_3 from "../assets/about_3.jpg"
+import Hobbies from "./Utils/Hobbies"
 
 const About = () => {
     return (
@@ -12,14 +16,14 @@ const About = () => {
                                 <div className="w-full px-3 sm:px-4 xl:w-1/2">
                                     <div className="py-3 m-2 sm:py-4">
                                         <img
-                                            src="https://i.ibb.co/gFb3ns6/image-1.jpg"
+                                            src={about_1}
                                             alt=""
                                             className="w-full rounded-2xl"
                                         />
                                     </div>
                                     <div className="py-3 m-2 sm:py-4">
                                         <img
-                                            src="https://i.ibb.co/rfHFq15/image-2.jpg"
+                                            src={about_2}
                                             alt=""
                                             className="w-full rounded-2xl"
                                         />
@@ -28,7 +32,7 @@ const About = () => {
                                 <div className="w-full px-3 sm:px-4 xl:w-1/2">
                                     <div className="relative z-10 m-2 my-4">
                                         <img
-                                            src="https://i.ibb.co/9y7nYCD/image-3.jpg"
+                                            src={about_3}
                                             alt=""
                                             className="w-full rounded-2xl"
                                         />
@@ -623,6 +627,7 @@ const About = () => {
                                     I am actively engaged in educational and innovative projects with organisations like Easy Stem, Stead Society, and Innovative Solvers. Additionally, I manage a graphics printing business alongside my primary responsibilities.
                                     With ambitions to transition into roles as a project manager, Core network engineer, and cybersecurity analyst, I remain committed to continuous skill development.
                                 </p>
+                                <Hobbies />
                                 <div className="my-6 lg:mt-10">
                                     <div className="flex justify-center md:justify-start">
                                         <Socials />
@@ -632,7 +637,7 @@ const About = () => {
                                     href="javascript:void(0)"
                                     className="inline-flex items-center justify-center py-3 text-base font-medium text-center text-neutral-900 border border-transparent rounded-md px-7 bg-green hover:bg-opacity-90"
                                 >
-                                    Get Started
+                                    Hire Me
                                 </a>
                             </div>
                         </div>

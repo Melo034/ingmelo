@@ -1,43 +1,49 @@
 import { useState } from "react";
 import PropTypes from "prop-types";
+import agentabu from "../assets/agentabu.jpg";
+import ideapulse from "../assets/ideapulse.jpg";
+import yabom from "../assets/yabom.jpg";
+import safespace from "../assets/safespace.jpg";
+import ib4me from "../assets/ib4me.jpg";
+import factquest from "../assets/factquest.jpg";
 
-const categories = ["all", "bounties", "design", "development"];
+const categories = ["all", "bounty", "design", "development"];
 
 const projects = [
     {
-        ImageHref: "./src/assets/agentabu.jpg",
-        category: "Bounties",
+        ImageHref:agentabu,
+        category: "Bounty",
         title: "Real Estate Agency",
         buttonHref: "https://agentabu.ingmelo.com/",
     },
     {
-        ImageHref: "./src/assets/ideapulse.jpg",
-        category: "Bounties",
+        ImageHref:ideapulse,
+        category: "Bounty",
         title: "Creativity",
         buttonHref: "https://ideapulse.ingmelo.com/",
     },
     {
-        ImageHref: "./src/assets/yabom.jpg",
+        ImageHref: yabom,
         category: "Development",
         title: "Health",
         buttonHref: "https://yabom.ingmelo.com/",
     },
     {
-        ImageHref: "./src/assets/safespace.jpg",
+        ImageHref: safespace,
         category: "Development",
         title: "Mental Health",
         buttonHref: "https://safespace.ingmelo.com/",
     },
     {
-        ImageHref: "https://i.ibb.co/m6dq2fX/image-04.jpg",
-        category: "Design",
-        title: "Creative Agency",
-        buttonHref: "#",
+        ImageHref: ib4me,
+        category: "Development",
+        title: "Crowdfunding",
+        buttonHref: "https://hib4me-client.onrender.com/",
     },
     {
-        ImageHref: "https://i.ibb.co/mCPjBsH/image-05.jpg",
-        category: "Marketing",
-        title: "Creative Agency",
+        ImageHref: factquest,
+        category: "Bounty",
+        title: "Creativity",
         buttonHref: "#",
     },
 ];
@@ -114,7 +120,7 @@ const PortfolioCard = ({ ImageHref, category, title, buttonHref }) => {
                         href={buttonHref}
                         className="text-green hover:border-neutral-200 hover:bg-neutral-900 inline-block rounded-md border border--green  py-[10px] px-7 text-sm font-medium transition hover:text-white"
                     >
-                        View Details
+                        Demo
                     </a>
                 </div>
             </div>

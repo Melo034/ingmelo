@@ -1,16 +1,29 @@
+import adobeillustrator from "../assets/icons8-adobe-illustrator-48.png";
+import adobexd from "../assets/icons8-adobe-xd-48.png";
+import bootstrap from "../assets/icons8-bootstrap-48.png";
+import canva from "../assets/icons8-canva-48.png";
+import figma from "../assets/icons8-figma-48.png";
+import flutter from "../assets/icons8-flutter-48.png";
+import javascript from "../assets/icons8-javascript-48.png";
+import laravel from "../assets/icons8-laravel-48.png";
+import node from "../assets/icons8-node-js-48.png";
+import python from "../assets/icons8-python-48.png";
+import tailwind from "../assets/icons8-tailwind-css-48.png";
+import wordpress from "../assets/icons8-wordpress-48.png";
+
 const skills = [
-    { name: "Adobe Illustrator", icon: "./src/assets/icons8-adobe-illustrator-48.png" },
-    { name: "Adobe XD", icon: "./src/assets/icons8-adobe-xd-48.png" },
-    { name: "Bootstrap", icon: "./src/assets/icons8-bootstrap-48.png" },
-    { name: "Canva", icon: "./src/assets/icons8-canva-48.png" },
-    { name: "Figma", icon: "./src/assets/icons8-figma-48.png" },
-    { name: "Flutter", icon: "./src/assets/icons8-flutter-48.png" },
-    { name: "JavaScript", icon: "./src/assets/icons8-javascript-48.png" },
-    { name: "Laravel", icon: "./src/assets/icons8-laravel-48.png" },
-    { name: "Node.js", icon: "./src/assets/icons8-node-js-48.png" },
-    { name: "Python", icon: "./src/assets/icons8-python-48.png" },
-    { name: "Tailwind CSS", icon: "./src/assets/icons8-tailwind-css-48.png" },
-    { name: "WordPress", icon: "./src/assets/icons8-wordpress-48.png" }
+    { name: "Adobe Illustrator", icon: adobeillustrator},
+    { name: "Adobe XD", icon: adobexd},
+    { name: "Bootstrap", icon: bootstrap},
+    { name: "Canva", icon: canva},
+    { name: "Figma", icon: figma },
+    { name: "Flutter", icon: flutter},
+    { name: "JavaScript", icon: javascript},
+    { name: "Laravel", icon: laravel },
+    { name: "Node.js", icon: node },
+    { name: "Python", icon: python },
+    { name: "Tailwind CSS", icon: tailwind },
+    { name: "WordPress", icon: wordpress }
   ];
   
   const expertise = [
