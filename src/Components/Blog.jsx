@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import about_3 from "../assets/about_3.jpg"
+import { NavLink } from 'react-router-dom';
 
 const Blog = () => {
     const [posts, setPosts] = useState([]);
@@ -42,7 +43,7 @@ const Blog = () => {
                     const postImage = getFirstImage(post.content);
                     return (
                         <article className="max-w-md mx-auto mt-4 shadow-lg border-neutral-800 bg-gradient-to-bl from-neutral-800 via-neutral-900 to-neutral-950 rounded-md duration-300 hover:shadow-sm" key={index}>
-                            <a href={post.link} target="_blank" rel="noopener noreferrer">
+                            <NavLink to={post.link} target="_blank" rel="noopener noreferrer">
                                 <img src={postImage}
                                     loading="lazy"
                                     alt={post.title}
@@ -70,7 +71,7 @@ const Blog = () => {
                                         {post.title}
                                     </h3>
                                 </div>
-                            </a>
+                            </NavLink>
                         </article>
                     )
                 })}

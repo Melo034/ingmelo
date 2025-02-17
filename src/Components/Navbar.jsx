@@ -5,10 +5,18 @@ const Navbar = () => {
     const [isCollapsed, setIsCollapsed] = useState(true);
     const navLinks = [
         { name: "Home", path: "/" },
-        { name: "Services", path: "/services" },
-        { name: "About", path: "/about" },
-        { name: "Portfolio", path: "/portfolio" },
+        { name: "About", path: "about" },
+        { name: "Skills", path: "skills" },
+        { name: "Portfolio", path: "portfolio" },
+        { name: "Blog", path: "blog" },
     ];
+
+    const handleScroll = (id) => {
+        const section = document.getElementById(id);
+        if (section) {
+            section.scrollIntoView({ behavior: "smooth" });
+        }
+    };
 
     return (
         <header className="sticky inset-x-0 z-50 flex flex-wrap w-full top-4 md:justify-start md:flex-nowrap">
@@ -46,6 +54,10 @@ const Navbar = () => {
                             <NavLink
                                 key={index}
                                 to={link.path}
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                    handleScroll(link.path);
+                                }}
                                 className={({ isActive }) =>
                                     `text-sm text-white hover:text-green md:py-4 focus:outline-none ${isActive ? "text-green" : ""
                                     }`
@@ -56,13 +68,16 @@ const Navbar = () => {
                             </NavLink>
                         ))}
                         <div>
-                            <NavLink to="/contacts" className="inline-flex items-center px-3 py-2 text-sm font-medium text-neutral-900 rounded-full group gap-x-2 bg-green focus:outline-none">
-                                Contact us
-                            </NavLink>
-                        </div>
+                            <NavLink   to="/" onClick={(e) => {
+                                e.preventDefault();
+                                handleScroll("contact"); 
+                            }} className="inline-flex items-center px-3 py-2 text-sm font-medium text-neutral-900 rounded-full group gap-x-2 bg-green focus:outline-none">
+                            Contact Me
+                        </NavLink>
                     </div>
                 </div>
-            </nav>
+            </div>
+        </nav>
         </header >
     );
 };

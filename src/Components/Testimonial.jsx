@@ -5,20 +5,20 @@ const Testimonial = () => {
         {
             avatar: "https://api.uifaces.co/our-content/donated/xZ4wg2Xj.jpg",
             name: "Martin escobar",
-            title: "Founder of meta",
-            quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et est hendrerit, porta nunc vitae."
+            title: "Product Manager",
+            quote: "An absolute professional! Melvin transformed our frontend experience with a sleek, high-performing React interface. Highly recommended!"
         },
         {
             avatar: "https://randomuser.me/api/portraits/men/46.jpg",
             name: "Simon andrew",
-            title: "Software engineer",
-            quote: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit."
+            title: "Engineering Lead",
+            quote: "Incredible problem-solving skills! Melvin seamlessly integrated IoT solutions with our electrical systems, making our operations more efficient."
         },
         {
             avatar: "https://randomuser.me/api/portraits/men/86.jpg",
-            name: "Micheal worin",
+            name: "Mitch",
             title: "Product designer",
-            quote: "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain."
+            quote: "Reliable, skilled, and innovative! Melvin consistently delivers high-quality code and ensures a smooth user experience. A pleasure to work with!"
         },
     ]
     return (

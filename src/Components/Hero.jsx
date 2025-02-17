@@ -3,6 +3,12 @@ import { TypeAnimation } from 'react-type-animation';
 import Heroimage from "../assets/Hero.png";
 
 const Hero = () => {
+    const handleScroll = (id) => {
+        const section = document.getElementById(id);
+        if (section) {
+            section.scrollIntoView({ behavior: "smooth" });
+        }
+    };
     return (
         <div
             className="relative bg-neutral-900 bg-cover bg-no-repeat bg-center flex items-center justify-center px-4 md:px-8"
@@ -29,12 +35,13 @@ const Hero = () => {
                         <h1 className="text-sm font-medium text-green">
                             Delivering Creative Designs That Stand Out
                         </h1>
+                        <h2 className="flex justify-center md:justify-start items-center gap-2 font-extrabold text-white text-xl sm:text-2xl">Hi,</h2>
                         <h2 className="flex justify-center md:justify-start items-center gap-2 font-extrabold text-white text-xl sm:text-2xl md:text-4xl lg:text-5xl">
                             I&apos;m&nbsp;
                             <span className="inline-block min-w-[150px] sm:min-w-[180px] md:min-w-[200px] whitespace-nowrap">
                                 <TypeAnimation
                                     sequence={[
-                                        'an Engineer',
+                                        'a Network Engineer',
                                         1000,
                                         'a Frontend Developer',
                                         1000
@@ -45,10 +52,15 @@ const Hero = () => {
                                 />
                             </span>
                         </h2>
+                        <p className="text-neutral-400 flex justify-center md:justify-start items-center gap-2 text-left">
+                            passionate about creating seamless digital experiences and innovative engineering solutions. With expertise in React, IoT, and embedded systems, I bridge the gap between software and hardware to build efficient, user-friendly applications. Let&apos;s create something amazing together!
+                        </p>
                         <div className="flex justify-center md:justify-start">
                             <NavLink
-                                to="javascript:void(0)"
-                                className="inline-flex items-center justify-center py-3 px-9 font-mono text-lg font-semibold text-white transition duration-300 ease-in-out border-2 rounded-full cursor-pointer border-green hover:text-black hover:bg-green hover:-translate-y-1"
+                                to="/" onClick={(e) => {
+                                    e.preventDefault();
+                                    handleScroll("contact");
+                                }} className="inline-flex items-center justify-center py-3 px-5 font-mono text-lg font-semibold text-white transition duration-300 ease-in-out border-2 rounded-full cursor-pointer border-green hover:text-black hover:bg-green hover:-translate-y-1"
                             >
                                 Let&apos;s Talk
                             </NavLink>
@@ -62,8 +74,8 @@ const Hero = () => {
                         />
                     </div>
                 </div>
-            </section>
-        </div>
+            </section >
+        </div >
     );
 }
 

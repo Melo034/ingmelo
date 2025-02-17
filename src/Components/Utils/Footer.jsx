@@ -1,7 +1,21 @@
-
+import Socials from "../Utils/Socials"
 import { NavLink } from "react-router-dom"
 
 const Footer = () => {
+    const items = [
+        { name: "Home", path: "/" },
+        { name: "About", path: "about" },
+        { name: "Contact", path: "contact" }
+    ];
+
+
+    const handleScroll = (id) => {
+        const section = document.getElementById(id);
+        if (section) {
+            section.scrollIntoView({ behavior: "smooth" });
+        }
+    };
+
     return (
         <>
             <footer className="relative overflow-hidden bg-neutral-900">
@@ -33,6 +47,23 @@ const Footer = () => {
                             <div className="border-s border-neutral-700 ps-5 ms-5">
                                 <p className="text-sm text-neutral-400">2025 Ingmelo.co</p>
                             </div>
+                            <ul className="items-center ml-5 justify-center space-y-5 sm:flex sm:space-x-4 sm:space-y-0">
+                                {items.map((item, index) => (
+                                    <li
+                                        key={index}
+                                        className="text-neutral-500 hover:text-green"
+                                    >
+                                        <NavLink to={item.path}
+                                            onClick={(e) => {
+                                                e.preventDefault();
+                                                handleScroll(item.path);
+                                            }}>{item.name}</NavLink>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                        <div className="items-end justify-end sm:flex">
+                            <Socials />
                         </div>
                     </div>
                 </div>
