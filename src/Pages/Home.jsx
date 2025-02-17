@@ -5,6 +5,7 @@ import Hero from "../Components/Hero"
 import Navbar from "../Components/Navbar"
 import Portfolio from "../Components/Portfolio"
 import Skills from "../Components/Skills"
+import SocialContacts from "../Components/SocialContacts"
 import Testimonial from "../Components/Testimonial"
 import BackToTop from "../Components/Utils/BackToTop"
 import Footer from "../Components/Utils/Footer"
@@ -17,9 +18,10 @@ const Home = () => {
     <About/>
     <Skills/>
     <Portfolio/>
-    <Blog/>
-    <Contact/>
     <Testimonial/>
+    <SocialContacts/>
+    <Contact/>
+    <Blog/>
     <Footer/>
     <BackToTop/>
   </div>

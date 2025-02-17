@@ -28,7 +28,7 @@ const Blog = () => {
     };
 
     return (
-        <section className="mt-5 mx-auto px-4 max-w-screen-xl md:px-8">
+        <section className="py-20 mx-auto px-4 max-w-screen-xl md:px-8">
             <div className="text-center">
                 <h1 className="text-3xl text-neutral-200 font-semibold">
                     Blog
