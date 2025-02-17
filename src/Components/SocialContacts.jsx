@@ -1,4 +1,4 @@
-import Media from "./Utils/media"
+import Media from "./Utils/Media"
 import CV from "../assets/Melvin.pdf"
 
 const SocialContacts = () => {
