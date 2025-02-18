@@ -3,8 +3,8 @@ import { NavLink } from "react-router-dom"
 
 const Footer = () => {
     const items = [
-        { name: "Home", path: "/" },
         { name: "About", path: "about" },
+        { name: "Portfolio", path: "portfolio" },
         { name: "Contact", path: "contact" }
     ];
 

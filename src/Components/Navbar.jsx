@@ -4,7 +4,6 @@ import { NavLink } from 'react-router-dom';
 const Navbar = () => {
     const [isCollapsed, setIsCollapsed] = useState(true);
     const navLinks = [
-        { name: "Home", path: "/" },
         { name: "About", path: "about" },
         { name: "Skills", path: "skills" },
         { name: "Portfolio", path: "portfolio" },

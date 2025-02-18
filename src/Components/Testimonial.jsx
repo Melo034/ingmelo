@@ -27,10 +27,10 @@ const Testimonial = () => {
                 <div className="relative z-10 max-w-screen-xl px-4 mx-auto md:px-8">
                     <div className="max-w-xl sm:text-center md:mx-auto">
                         <h3 className="text-3xl font-semibold text-white sm:text-4xl">
-                            Hear from our customers
+                            Hear from my customers
                         </h3>
                         <p className="mt-3 text-neutral-400">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et est hendrerit, porta nunc vitae, gravida justo. Nunc fermentum magna lorem, euismod volutpat arcu volutpat et.
+                            Hear from clients and colleagues who have experienced my expertise in frontend development and electrical engineering firsthand.
                         </p>
                     </div>
                     <div className="mt-12">
